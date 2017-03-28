@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.3.2
+
+- fix ignore files issue
+
+## v1.3.1
+
+- npm/bower ignores extraneous files
+
+## v1.3.0
+
+- removes Bootstrap as a dependency
+- implements custom styles and style extensibility
+- implements sass, webpack, and other build tools
+- enhances tests
+- fixes broken demo (#36)
+- adds missing PRODID, UID, and DTSTAMP fields for proper ics validation (#24)
+
 ## v1.2.2
 
 - updates docs
