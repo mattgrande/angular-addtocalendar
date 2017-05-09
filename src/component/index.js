@@ -1,5 +1,3 @@
-import angular from 'angular';
-
 import controller from './controller';
 import bindings from './bindings';
 import template from './template.html';

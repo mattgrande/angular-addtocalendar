@@ -12,6 +12,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
  * Get dependencies list from package.json
  */
 var vendorDeps = require('./package.json').dependencies;
+delete vendorDeps.angular;
+delete vendorDeps.moment;
 
 /**
  * Env
@@ -39,6 +41,7 @@ module.exports = function makeWebpackConfig() {
     addtocalendar: './src/component/index.js',
     vendor: Object.keys(vendorDeps)
   };
+  console.log('config.entry', config.entry);
 
   /**
    * Output
@@ -144,9 +147,9 @@ module.exports = function makeWebpackConfig() {
       new CopyWebpackPlugin([{
         from: __dirname + '/src/component/styles.scss',
         to: __dirname + '/dist/addtocalendar.scss'
-      }]),
-      new webpack.optimize.CommonsChunkPlugin('vendor'),
-      new VendorChunkPlugin('vendor')
+      }]) //,
+      // new webpack.optimize.CommonsChunkPlugin('vendor'),
+      // new VendorChunkPlugin('vendor')
     )
   }
 

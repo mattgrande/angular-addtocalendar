@@ -1,10 +1,8 @@
-import moment from 'moment';
-
 export default class Utils {
 
   /**
    * Return 12-hour format to 24-hour.
-   * 
+   *
    * @param  {Number} hours
    * @return {String}
    */
@@ -17,7 +15,7 @@ export default class Utils {
 
   /**
    * Gets the duration between dates.
-   * 
+   *
    * @param  {String} startDate
    * @param  {String} endDate
    * @param  {Number} timezone
@@ -59,7 +57,7 @@ export default class Utils {
 
   /**
    * Format time as a universal timestamp format w.r.t. the given timezone.
-   * 
+   *
    * @param  {String} timestamp valid RFC-2822 string timestamp
    * @param  {String} timezone  tz offset (in minutes) (optional)
    * @return {String}
@@ -88,7 +86,7 @@ export default class Utils {
 
   /**
    * Transforms given string to be valid file name.
-   * 
+   *
    * @param  {String} title
    * @return {String}
    */
@@ -101,7 +99,7 @@ export default class Utils {
 
   /**
    * Returns a random base 36 hash for iCal UID.
-   * 
+   *
    * @return {String}
    */
   static getUid() {
@@ -110,7 +108,7 @@ export default class Utils {
 
   /**
    * Returns a universal timestamp of current time.
-   * 
+   *
    * @return {String}
    */
   static getTimeCreated() {
